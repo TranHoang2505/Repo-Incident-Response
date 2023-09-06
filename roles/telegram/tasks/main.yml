@@ -1,7 +1,7 @@
 ---
 - name: Send notify to Telegram
   community.general.telegram:
-    token: 6593012831:AAERIwZZMuBoeT7dzXcflrULwa3p_rhrCdI
+    token: '6593012831:AAERIwZZMuBoeT7dzXcflrULwa3p_rhrCdI'
     api_args:
       chat_id: -900228251
       parse_mode: markdown
@@ -12,7 +12,7 @@
   when: services == 'dvcqgdientaps'
 - name: Send notify to Telegram
   community.general.telegram:
-    token: 6593012831:AAERIwZZMuBoeT7dzXcflrULwa3p_rhrCdI
+    token: '6593012831:AAERIwZZMuBoeT7dzXcflrULwa3p_rhrCdI'
     api_args:
       chat_id: -900228251
       parse_mode: markdown
@@ -23,7 +23,7 @@
   when: services == 'vnportals' and inventory_hostname == 'vnportal-2019'
 - name: Send notify to Telegram
   community.general.telegram:
-    token: 6593012831:AAERIwZZMuBoeT7dzXcflrULwa3p_rhrCdI
+    token: '6593012831:AAERIwZZMuBoeT7dzXcflrULwa3p_rhrCdI'
     api_args:
       chat_id: -900228251
       parse_mode: markdown
@@ -34,7 +34,7 @@
   when: services == 'hanoinews'
 - name: Send notify to Telegram
   community.general.telegram:
-    token: 6593012831:AAERIwZZMuBoeT7dzXcflrULwa3p_rhrCdI
+    token: '6593012831:AAERIwZZMuBoeT7dzXcflrULwa3p_rhrCdI'
     api_args:
       chat_id: -900228251
       parse_mode: markdown
