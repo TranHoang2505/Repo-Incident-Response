@@ -1,7 +1,7 @@
 ---
 - name: Send notify to Telegram
   community.general.telegram:
-    token: '6593012831:AAERIwZZMuBoeT7dzXcflrULwa3p_rhrCdI'
+    token: '6060974585:AAFM95tyQjzo52CMHZQknzTM9teHk0_2OuY'
     api_args:
       chat_id: -900228251
       parse_mode: "markdown"
@@ -11,7 +11,7 @@
   when: services == 'dvcqgdientaps'
 - name: Send notify to Telegram
   community.general.telegram:
-    token: '6593012831:AAERIwZZMuBoeT7dzXcflrULwa3p_rhrCdI'
+    token: '6060974585:AAFM95tyQjzo52CMHZQknzTM9teHk0_2OuY'
     api_args:
       chat_id: -900228251
       parse_mode: "markdown"
@@ -21,7 +21,7 @@
   when: services == 'hanoinews'
 - name: Send notify to Telegram
   community.general.telegram:
-    token: '6593012831:AAERIwZZMuBoeT7dzXcflrULwa3p_rhrCdI'
+    token: '6060974585:AAFM95tyQjzo52CMHZQknzTM9teHk0_2OuY'
     api_args:
       chat_id: -900228251
       parse_mode: "markdown"
