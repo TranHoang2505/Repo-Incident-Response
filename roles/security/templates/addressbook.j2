@@ -1,33 +1,3 @@
-{% if inventory_hostname == 'vnportal-2019' %}
-security {
-    zones {
-        security-zone VR0_untrust {
-            {% for source_address in source_addresses.split('\n') %}
-            address-book {
-                address {{ source_address }} {{ source_address }};
-                address-set blacklist-vnportal {
-                    address {{ source_address }};       
-                }
-            }
-            {% endfor %}
-        }
-    }
-}
-{% endif %}
-{% if inventory_hostname == 'vnportal-2020' %}
-security {
-    {% for source_address in source_addresses.split('\n') %}
-    address-book {
-        VNPT_INTERNET {
-            address {{ source_address }} {{ source_address }};
-            address-set blacklist-vnportal {
-                address {{ source_address }};
-            }
-        }
-    }
-    {% endfor %}
-}
-{% endif %}
 {% if inventory_hostname == 'hanoinew' %}
 security {
     zones {
